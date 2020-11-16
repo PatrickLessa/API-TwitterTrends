@@ -8,6 +8,7 @@ for t3 in top3:
     for word in t3:
         query += word + " "
     
+    query += "NOTICIAS"
     print(query)
     for result in search(query, lang="pt", stop=3):
         print(result)
